@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+        <!-- Font Icon -->
+        <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!--Main css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="main">
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form action="StudentRegistrationServlet" method="post" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="zmdi zmdi-account material-icons-name"></i>
+                                </label>
+                                <input type="text" name="sname" id="txtname" placeholder="Your Name" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="rollno">
+                                    <i class="zmdi zmdi-circle material-icons-name"></i>
+                                </label>
+                                <input type="number" name="srollno" id="txtrollno" placeholder="Your Roll no" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="zmdi zmdi-email"></i>
+                                </label>
+                                <input type="email" name="semail" id="email" placeholder="Your Email" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">
+                                    <i class="zmdi zmdi-account-circle"></i>
+                                </label>
+                                <input type="text" name="susername" id="txtusername" placeholder="Your Username" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">
+                                    <i class="zmdi zmdi-lock"></i>
+                                </label>
+                                <input type="password" name="spassword" id="txtpassword" placeholder="Password" required/>
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="re-pass">
+                                    <i class="zmdi zmdi-lock-outline"></i>
+                                </label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" required/>
+                            </div> --> 
+                            <div class="form-group">
+                                <label for="bdate">
+                                    <i class="zmdi zmdi-calendar"></i>
+                                </label>
+                                <input type="date" name="sbdate" id="txtbdate" placeholder="Your Birthdate" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">
+                                    <i class="zmdi zmdi-map"></i>
+                                </label>
+                                <select name="state" class="form-select" id="txtstate">
+                                    <option selected>&nbsp;&nbsp;&nbsp;Select state</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Goa">Goa</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">
+                                    <i class="zmdi zmdi-map"></i><span><span>&nbsp;&nbsp;</span></span>
+                                </label>
+                                <select name="city" class="form-select" id="txtcity">
+                                    <option selected>&nbsp;&nbsp;&nbsp;Select city</option>
+                                    <option value="Ahmednagar">Ahmednagar</option>
+                                    <option value="Dhule">Dhule</option>
+                                    <option value="Kolhapur">Kolhapur</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Nagpur">Nagpur</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Solapur">Solapur</option>
+                                    <option value="Thane">Thane</option>
+                                    <option value="Satara">Satara</option>
+                                    <option value="Panaji">Panaji</option>
+                                    <option value="Madgaon">Madgaon</option>
+                                    <option value="Vasca Da Gama">Vasca Da Gama</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mnumber">
+                                    <i class="zmdi zmdi-smartphone"></i>
+                                </label>
+                                <input type="tel" name="smnumber" id="txtmnumber" placeholder="Enter your mobile number" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="course">
+                                    <i class="di zmdi-circle-o"></i><span><span><span>&nbsp;&nbsp;</span></span></span>
+                                </label>
+                                <select id="course" class="form-select" name="course">
+                                    <option selected>&nbsp;&nbsp;&nbsp;Select course</option>
+                                    <option value="BCA">Bachelor of Computer Application (BCA)</option>
+                                    <option value="BCS">Bachelor of Computer Science (BCS)</option>
+                                    <option value="BSC">Bachelor of Science (computer)(BSC CS)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                            <div class="form-group form-button">
+                            <a href="StudentLogin.html" class="signup-image-link">
+                                <input type="button" name="cancel" id="cancel" class="form-cancel" value="Cancel"/>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure>
+                            <img src="images/signup-image.jpg" alt="sign up image">
+                        </figure>
+                        <a href="StudentLogin.html" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

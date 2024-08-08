@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Test</title>
+<link rel="stylesheet" href="css/stylesheetinsertQ.css">
+</head>
+<body>
+	<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins ">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title"><b> Create test </b>  </h2>
+                    <form action="CreateTestServlet" method="post">
+                        <div class="row row-space">
+                            <div class="input-group">
+                                <label for="sname" class="label"> Enter Subject name </label>
+                                <input class="input--style-4" type="text" name="Subject" required />
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="input-group">
+                                <label for="sid" class="label"> Enter subject id </label>
+                                <input class="input--style-4" type="number" name="sid" required />
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="input-group">
+                                <label for="scourse" class="label"> Select course </label>
+                                <select name="scourse" class="input01" required>
+                                    <option disabled="disabled" selected="selected">Choose option </option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="BSC">BSC</option>
+                                    <option value="BCS">BCS</option>
+                                </select>
+                            </div>
+                            <div class="select-dropdown"></div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="submit"> Create </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
